@@ -2,20 +2,16 @@
 
 小程序平台
 
-## Installation
+## 安装
 
 ```sh
 npm install react-native-mp
 ```
 
-## Usage
+## 使用
 
 ```js
-import Mp from "react-native-mp";
 
-// ...
-
-const result = await Mp.multiply(3, 7);
 ```
 
 ## Contributing

@@ -11,14 +11,22 @@ class MpModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModu
         return "Mp"
     }
 
-    // Example method
-    // See https://reactnative.dev/docs/native-modules-android
     @ReactMethod
-    fun multiply(a: Int, b: Int, promise: Promise) {
-    
-      promise.resolve(a * b)
-    
+    fun initialize(params: ReadableMap, promise: Promise) {
+      try {
+        val items = params.getArray("items")
+        val capsule = params.getBoolean("capsule")
+        val fontSize = params.getString("fontSize")
+        val fontColor = params.getString("fontColor")
+        val fontWeight = params.getString("fontWeight")
+        val sheetItems: MutableList<MenuActionSheetItem> = ArrayList()
+        for (i in 0 until items!!.size()) {
+          val item = items.getMap(i)
+          sheetItems.add(MenuActionSheetItem(item!!.getString("title"), item.getString("key")))
+        }
+//        val config = DCSDK
+      }
     }
 
-    
+
 }
