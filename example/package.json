@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "react": "^17.0.1",
-    "react-native": "0.65.1"
+    "react-native": "0.65.1",
+    "lottie-ios": "3.2.3",
+    "lottie-react-native": "4.1.0",
+    "react-native-fs": "^2.16.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

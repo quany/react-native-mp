@@ -29,11 +29,10 @@ android {
   compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
   buildToolsVersion getExtOrDefault('buildToolsVersion')
   defaultConfig {
-    minSdkVersion 16
+    minSdkVersion 19
     targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
     versionCode 1
     versionName "1.0"
-
   }
 
   buildTypes {
@@ -52,8 +51,8 @@ android {
 
 repositories {
   mavenCentral()
-  jcenter()
-  google()
+  maven { url 'https://maven.aliyun.com/repository/public' }
+  maven { url 'https://maven.aliyun.com/repository/google' }
 
   def found = false
   def defaultDir = null
