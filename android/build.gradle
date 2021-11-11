@@ -1,137 +1,73 @@
 buildscript {
-  // Buildscript is evaluated before everything else so we can't use getExtOrDefault
-  def kotlin_version = rootProject.ext.has('kotlinVersion') ? rootProject.ext.get('kotlinVersion') : project.properties['Mp_kotlinVersion']
+    if (project == rootProject) {
+        repositories {
+            maven { url 'https://maven.aliyun.com/repository/public' }
+            maven { url 'https://maven.aliyun.com/repository/google' }
+            mavenCentral()
+        }
 
-  repositories {
-    maven { url 'https://maven.aliyun.com/repository/public' }
-    maven { url 'https://maven.aliyun.com/repository/google' }
-  }
-
-  dependencies {
-    classpath 'com.android.tools.build:gradle:3.2.1'
-    // noinspection DifferentKotlinGradleVersion
-    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-  }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:3.5.3'
+        }
+    }
 }
 
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
-def getExtOrDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['Mp_' + name]
-}
-
-def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties['Mp_' + name]).toInteger()
+def safeExtGet(prop, fallback) {
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
 }
 
 android {
-  compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
-  buildToolsVersion getExtOrDefault('buildToolsVersion')
-  defaultConfig {
-    minSdkVersion 19
-    targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
-    versionCode 1
-    versionName "1.0"
-  }
-
-  buildTypes {
-    release {
-      minifyEnabled false
+    compileSdkVersion safeExtGet('Mp_compileSdkVersion', 29)
+    defaultConfig {
+        minSdkVersion safeExtGet('Mp_minSdkVersion', 16)
+        targetSdkVersion safeExtGet('Mp_targetSdkVersion', 29)
+        versionCode 1
+        versionName "1.0"
     }
-  }
-  lintOptions {
-    disable 'GradleCompatible'
-  }
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-  }
+
+    //此处配置必须添加 否则无法正确运行
+    aaptOptions {
+        additionalParameters '--auto-add-overlay'
+        //noCompress 'foo', 'bar'
+        ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    lintOptions {
+        disable 'GradleCompatible'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 repositories {
-  mavenCentral()
-  maven { url 'https://maven.aliyun.com/repository/public' }
-  maven { url 'https://maven.aliyun.com/repository/google' }
-
-  def found = false
-  def defaultDir = null
-  def androidSourcesName = 'React Native sources'
-
-  if (rootProject.ext.has('reactNativeAndroidRoot')) {
-    defaultDir = rootProject.ext.get('reactNativeAndroidRoot')
-  } else {
-    defaultDir = new File(
-            projectDir,
-            '/../../../node_modules/react-native/android'
-    )
-  }
-
-  if (defaultDir.exists()) {
+    mavenLocal()
     maven {
-      url defaultDir.toString()
-      name androidSourcesName
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url("$rootDir/../node_modules/react-native/android")
     }
-
-    logger.info(":${project.name}:reactNativeAndroidRoot ${defaultDir.canonicalPath}")
-    found = true
-  } else {
-    def parentDir = rootProject.projectDir
-
-    1.upto(5, {
-      if (found) return true
-      parentDir = parentDir.parentFile
-
-      def androidSourcesDir = new File(
-              parentDir,
-              'node_modules/react-native'
-      )
-
-      def androidPrebuiltBinaryDir = new File(
-              parentDir,
-              'node_modules/react-native/android'
-      )
-
-      if (androidPrebuiltBinaryDir.exists()) {
-        maven {
-          url androidPrebuiltBinaryDir.toString()
-          name androidSourcesName
-        }
-
-        logger.info(":${project.name}:reactNativeAndroidRoot ${androidPrebuiltBinaryDir.canonicalPath}")
-        found = true
-      } else if (androidSourcesDir.exists()) {
-        maven {
-          url androidSourcesDir.toString()
-          name androidSourcesName
-        }
-
-        logger.info(":${project.name}:reactNativeAndroidRoot ${androidSourcesDir.canonicalPath}")
-        found = true
-      }
-    })
-  }
-
-  if (!found) {
-    throw new GradleException(
-            "${project.name}: unable to locate React Native android sources. " +
-                    "Ensure you have you installed React Native as a dependency in your project and try again."
-    )
-  }
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    mavenCentral()
 }
 
-def kotlin_version = getExtOrDefault('kotlinVersion')
-
 dependencies {
-  implementation fileTree(include: ['*.aar', '*.jar'], dir: 'libs')
-  // noinspection GradleDynamicVersion
-  api 'com.facebook.react:react-native:+'
-  implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation 'com.android.support:recyclerview-v7:28.0.0' //必须集成
-  implementation 'com.android.support:support-v4:28.0.0' //必须集成
-  implementation 'com.android.support:appcompat-v7:28.0.0' //必须集成
-  implementation 'com.alibaba:fastjson:1.1.46.android' //必须集成
-  implementation 'com.facebook.fresco:fresco:1.13.0'//必须集成
-  implementation 'com.facebook.fresco:animated-gif:1.13.0'//必须集成
-  implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    //noinspection GradleDynamicVersion
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation 'com.android.support:recyclerview-v7:28.0.0' //必须集成
+    implementation 'com.android.support:support-v4:28.0.0' //必须集成
+    implementation 'com.android.support:appcompat-v7:28.0.0' //必须集成
+    implementation 'com.alibaba:fastjson:1.1.46.android' //必须集成
+    implementation 'com.facebook.fresco:fresco:1.13.0'//必须集成
+    implementation 'com.facebook.fresco:animated-gif:1.13.0'//必须集成
+    implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
 }

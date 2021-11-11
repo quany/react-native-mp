@@ -7,10 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* Mp.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Mp.m */; };
-		F4FF95D7245B92E800C19C63 /*  Mp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  Mp.swift */; };
-
+		DC7EDF4F273A683A00D3E5CA /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF44273A683A00D3E5CA /* liblibNativeUI.a */; };
+		DC7EDF50273A683A00D3E5CA /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF45273A683A00D3E5CA /* liblibPDRCore.a */; };
+		DC7EDF51273A683A00D3E5CA /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF46273A683A00D3E5CA /* liblibNavigator.a */; };
+		DC7EDF52273A683A00D3E5CA /* liblibStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF47273A683A00D3E5CA /* liblibStorage.a */; };
+		DC7EDF53273A683A00D3E5CA /* liblibNativeObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF48273A683A00D3E5CA /* liblibNativeObj.a */; };
+		DC7EDF54273A683A00D3E5CA /* storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF49273A683A00D3E5CA /* storage.framework */; };
+		DC7EDF55273A683A00D3E5CA /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF4A273A683A00D3E5CA /* liblibUI.a */; };
+		DC7EDF56273A683A00D3E5CA /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF4B273A683A00D3E5CA /* libcoreSupport.a */; };
+		DC7EDF57273A683A00D3E5CA /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF4C273A683A00D3E5CA /* liblibWeex.a */; };
+		DC7EDF58273A683A00D3E5CA /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF4D273A683A00D3E5CA /* liblibIO.a */; };
+		DC7EDF59273A683A00D3E5CA /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF4E273A683A00D3E5CA /* libSDWebImage.a */; };
+		DC7EDF5B273A684800D3E5CA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF5A273A684800D3E5CA /* JavaScriptCore.framework */; };
+		DC7EDF5D273A685B00D3E5CA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF5C273A685B00D3E5CA /* CoreMedia.framework */; };
+		DC7EDF5F273A686900D3E5CA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF5E273A686900D3E5CA /* MediaPlayer.framework */; };
+		DC7EDF61273A687200D3E5CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF60273A687200D3E5CA /* AVFoundation.framework */; };
+		DC7EDF63273A687A00D3E5CA /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF62273A687A00D3E5CA /* AVKit.framework */; };
+		DC7EDF65273A688300D3E5CA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF64273A688300D3E5CA /* GLKit.framework */; };
+		DC7EDF67273A688F00D3E5CA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF66273A688F00D3E5CA /* OpenGLES.framework */; };
+		DC7EDF69273A689900D3E5CA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF68273A689900D3E5CA /* CoreText.framework */; };
+		DC7EDF6B273A68A300D3E5CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF6A273A68A300D3E5CA /* QuartzCore.framework */; };
+		DC7EDF6D273A68AD00D3E5CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF6C273A68AD00D3E5CA /* CoreGraphics.framework */; };
+		DC7EDF6F273A68B600D3E5CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF6E273A68B600D3E5CA /* libc++.tbd */; };
+		DC7EDF72273A68C300D3E5CA /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF71273A68C300D3E5CA /* QuickLook.framework */; };
+		DC7EDF74273A68CD00D3E5CA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF73273A68CD00D3E5CA /* CoreTelephony.framework */; };
+		DC7EDF76273A68D500D3E5CA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF75273A68D500D3E5CA /* AssetsLibrary.framework */; };
+		DC7EDF78273A68DD00D3E5CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF77273A68DD00D3E5CA /* CoreLocation.framework */; };
+		DC7EDF7A273A68E500D3E5CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF79273A68E500D3E5CA /* AddressBook.framework */; };
+		DC7EDF7C273A68F000D3E5CA /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EDF7B273A68F000D3E5CA /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +51,117 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMp.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
+		B3E7B5881CC2AC0600A0062D /* Mp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mp.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Mp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mp.m; sourceTree = "<group>"; };
-		F4FF95D5245B92E700C19C63 /* Mp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mp-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4FF95D6245B92E800C19C63 /* Mp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp.swift; sourceTree = "<group>"; };
-
+		DC7EDF44273A683A00D3E5CA /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNativeUI.a; path = Core/Libs/liblibNativeUI.a; sourceTree = "<group>"; };
+		DC7EDF45273A683A00D3E5CA /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPDRCore.a; path = Core/Libs/liblibPDRCore.a; sourceTree = "<group>"; };
+		DC7EDF46273A683A00D3E5CA /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNavigator.a; path = Core/Libs/liblibNavigator.a; sourceTree = "<group>"; };
+		DC7EDF47273A683A00D3E5CA /* liblibStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibStorage.a; path = Core/Libs/liblibStorage.a; sourceTree = "<group>"; };
+		DC7EDF48273A683A00D3E5CA /* liblibNativeObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNativeObj.a; path = Core/Libs/liblibNativeObj.a; sourceTree = "<group>"; };
+		DC7EDF49273A683A00D3E5CA /* storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = storage.framework; path = Core/Libs/storage.framework; sourceTree = "<group>"; };
+		DC7EDF4A273A683A00D3E5CA /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibUI.a; path = Core/Libs/liblibUI.a; sourceTree = "<group>"; };
+		DC7EDF4B273A683A00D3E5CA /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcoreSupport.a; path = Core/Libs/libcoreSupport.a; sourceTree = "<group>"; };
+		DC7EDF4C273A683A00D3E5CA /* liblibWeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibWeex.a; path = Core/Libs/liblibWeex.a; sourceTree = "<group>"; };
+		DC7EDF4D273A683A00D3E5CA /* liblibIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibIO.a; path = Core/Libs/liblibIO.a; sourceTree = "<group>"; };
+		DC7EDF4E273A683A00D3E5CA /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = Core/Libs/libSDWebImage.a; sourceTree = "<group>"; };
+		DC7EDF5A273A684800D3E5CA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF5C273A685B00D3E5CA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF5E273A686900D3E5CA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF60273A687200D3E5CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF62273A687A00D3E5CA /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF64273A688300D3E5CA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		DC7EDF66273A688F00D3E5CA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DC7EDF68273A689900D3E5CA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF6A273A68A300D3E5CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF6C273A68AD00D3E5CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF6E273A68B600D3E5CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		DC7EDF71273A68C300D3E5CA /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/QuickLook.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF73273A68CD00D3E5CA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF75273A68D500D3E5CA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF77273A68DD00D3E5CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF79273A68E500D3E5CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		DC7EDF7B273A68F000D3E5CA /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		DC7EDF7F273A691D00D3E5CA /* __uniappes6.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = __uniappes6.js; sourceTree = "<group>"; };
+		DC7EDF80273A691D00D3E5CA /* uni-jsframework.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework.js"; sourceTree = "<group>"; };
+		DC7EDF81273A691D00D3E5CA /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PandoraApi.bundle; sourceTree = "<group>"; };
+		DC7EDF82273A691D00D3E5CA /* uni-jsframework-vue3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework-vue3.js"; sourceTree = "<group>"; };
+		DC7EDF83273A691D00D3E5CA /* unincomponents.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = unincomponents.ttf; sourceTree = "<group>"; };
+		DC7EDF84273A691D00D3E5CA /* weex-polyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "weex-polyfill.js"; sourceTree = "<group>"; };
+		DC7EDF85273A691D00D3E5CA /* weexUniJs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = weexUniJs.js; sourceTree = "<group>"; };
+		DC7EDF87273A693200D3E5CA /* DCUniMPSDKEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPSDKEngine.h; sourceTree = "<group>"; };
+		DC7EDF88273A693200D3E5CA /* DCUniMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMP.h; sourceTree = "<group>"; };
+		DC7EDF89273A693200D3E5CA /* DCUniMPConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPConfiguration.h; sourceTree = "<group>"; };
+		DC7EDF8A273A693200D3E5CA /* DCUniMPInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPInstance.h; sourceTree = "<group>"; };
+		DC7EDF8C273A693200D3E5CA /* WXModuleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXModuleProtocol.h; sourceTree = "<group>"; };
+		DC7EDF8D273A693200D3E5CA /* WXResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceLoader.h; sourceTree = "<group>"; };
+		DC7EDF8E273A693200D3E5CA /* WXApmForInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApmForInstance.h; sourceTree = "<group>"; };
+		DC7EDF8F273A693200D3E5CA /* WXWebSocketHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXWebSocketHandler.h; sourceTree = "<group>"; };
+		DC7EDF90273A693200D3E5CA /* WXImgLoaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderProtocol.h; sourceTree = "<group>"; };
+		DC7EDF91273A693200D3E5CA /* WXComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXComponentManager.h; sourceTree = "<group>"; };
+		DC7EDF92273A693200D3E5CA /* WXScrollerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScrollerProtocol.h; sourceTree = "<group>"; };
+		DC7EDF93273A693200D3E5CA /* WXRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRichText.h; sourceTree = "<group>"; };
+		DC7EDF94273A693200D3E5CA /* WXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXView.h; sourceTree = "<group>"; };
+		DC7EDF95273A693200D3E5CA /* WXValidateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXValidateProtocol.h; sourceTree = "<group>"; };
+		DC7EDF96273A693200D3E5CA /* WXDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDefine.h; sourceTree = "<group>"; };
+		DC7EDF97273A693200D3E5CA /* JSContext+Weex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSContext+Weex.h"; sourceTree = "<group>"; };
+		DC7EDF98273A693200D3E5CA /* WXExtendCallNativeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXExtendCallNativeProtocol.h; sourceTree = "<group>"; };
+		DC7EDF99273A693200D3E5CA /* WXSDKEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKEngine.h; sourceTree = "<group>"; };
+		DC7EDF9A273A693200D3E5CA /* style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = style.h; sourceTree = "<group>"; };
+		DC7EDF9B273A693200D3E5CA /* WXResourceRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceRequestHandler.h; sourceTree = "<group>"; };
+		DC7EDF9C273A693200D3E5CA /* WXDisplayLinkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDisplayLinkManager.h; sourceTree = "<group>"; };
+		DC7EDF9D273A693200D3E5CA /* WXUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtility.h; sourceTree = "<group>"; };
+		DC7EDF9E273A693200D3E5CA /* WXResourceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceRequest.h; sourceTree = "<group>"; };
+		DC7EDF9F273A693200D3E5CA /* WXConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXConvert.h; sourceTree = "<group>"; };
+		DC7EDFA0273A693200D3E5CA /* WXPageEventNotifyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPageEventNotifyEvent.h; sourceTree = "<group>"; };
+		DC7EDFA1273A693200D3E5CA /* WXSDKInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKInstance.h; sourceTree = "<group>"; };
+		DC7EDFA2273A693200D3E5CA /* WXSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKManager.h; sourceTree = "<group>"; };
+		DC7EDFA3273A693200D3E5CA /* WXDebugTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebugTool.h; sourceTree = "<group>"; };
+		DC7EDFA4273A693200D3E5CA /* WXType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXType.h; sourceTree = "<group>"; };
+		DC7EDFA5273A693200D3E5CA /* WXApmProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApmProtocol.h; sourceTree = "<group>"; };
+		DC7EDFA6273A693200D3E5CA /* WXJSFrameworkLoadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXJSFrameworkLoadProtocol.h; sourceTree = "<group>"; };
+		DC7EDFA7273A693200D3E5CA /* WXExceptionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXExceptionUtils.h; sourceTree = "<group>"; };
+		DC7EDFA8273A693200D3E5CA /* WXIndicatorComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXIndicatorComponent.h; sourceTree = "<group>"; };
+		DC7EDFA9273A693200D3E5CA /* WXErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXErrorView.h; sourceTree = "<group>"; };
+		DC7EDFAA273A693200D3E5CA /* NSObject+WXSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WXSwizzle.h"; sourceTree = "<group>"; };
+		DC7EDFAB273A693200D3E5CA /* WXMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXMonitor.h; sourceTree = "<group>"; };
+		DC7EDFAC273A693200D3E5CA /* WXSDKInstance+DCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXSDKInstance+DCExtend.h"; sourceTree = "<group>"; };
+		DC7EDFAD273A693200D3E5CA /* WXRecyclerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRecyclerComponent.h; sourceTree = "<group>"; };
+		DC7EDFAE273A693200D3E5CA /* WXScrollerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScrollerComponent.h; sourceTree = "<group>"; };
+		DC7EDFAF273A693200D3E5CA /* WXNetworkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkProtocol.h; sourceTree = "<group>"; };
+		DC7EDFB0273A693200D3E5CA /* WXTracingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTracingManager.h; sourceTree = "<group>"; };
+		DC7EDFB1273A693200D3E5CA /* WXComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXComponent.h; sourceTree = "<group>"; };
+		DC7EDFB2273A693200D3E5CA /* WXPrerenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPrerenderManager.h; sourceTree = "<group>"; };
+		DC7EDFB3273A693200D3E5CA /* WXComponent+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXComponent+Layout.h"; sourceTree = "<group>"; };
+		DC7EDFB4273A693200D3E5CA /* layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layout.h; sourceTree = "<group>"; };
+		DC7EDFB5273A693200D3E5CA /* WXSDKInstance+Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXSDKInstance+Bridge.h"; sourceTree = "<group>"; };
+		DC7EDFB6273A693200D3E5CA /* UniPluginProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniPluginProtocol.h; sourceTree = "<group>"; };
+		DC7EDFB7273A693200D3E5CA /* WXModalUIModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXModalUIModule.h; sourceTree = "<group>"; };
+		DC7EDFB8273A693200D3E5CA /* WXAnalyzerCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAnalyzerCenter.h; sourceTree = "<group>"; };
+		DC7EDFB9273A693200D3E5CA /* WXVoiceOverModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXVoiceOverModule.h; sourceTree = "<group>"; };
+		DC7EDFBA273A693200D3E5CA /* WXRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRootView.h; sourceTree = "<group>"; };
+		DC7EDFBB273A693200D3E5CA /* WXAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAppConfiguration.h; sourceTree = "<group>"; };
+		DC7EDFBC273A693200D3E5CA /* WXListComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXListComponent.h; sourceTree = "<group>"; };
+		DC7EDFBD273A693200D3E5CA /* WXSDKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKError.h; sourceTree = "<group>"; };
+		DC7EDFBE273A693200D3E5CA /* WXRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRootViewController.h; sourceTree = "<group>"; };
+		DC7EDFBF273A693200D3E5CA /* WXNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigationProtocol.h; sourceTree = "<group>"; };
+		DC7EDFC0273A693200D3E5CA /* WXAnalyzerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAnalyzerProtocol.h; sourceTree = "<group>"; };
+		DC7EDFC1273A693200D3E5CA /* WeexSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexSDK.h; sourceTree = "<group>"; };
+		DC7EDFC2273A693200D3E5CA /* WXBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBridgeManager.h; sourceTree = "<group>"; };
+		DC7EDFC3273A693200D3E5CA /* WXResourceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceResponse.h; sourceTree = "<group>"; };
+		DC7EDFC4273A693200D3E5CA /* WXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBaseViewController.h; sourceTree = "<group>"; };
+		DC7EDFC5273A693200D3E5CA /* WXAppMonitorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAppMonitorProtocol.h; sourceTree = "<group>"; };
+		DC7EDFC6273A693200D3E5CA /* WeexProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexProtocol.h; sourceTree = "<group>"; };
+		DC7EDFC7273A693200D3E5CA /* WXJSExceptionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXJSExceptionProtocol.h; sourceTree = "<group>"; };
+		DC7EDFC8273A693200D3E5CA /* WXJSExceptionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXJSExceptionInfo.h; sourceTree = "<group>"; };
+		DC7EDFC9273A693200D3E5CA /* WXTracingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTracingProtocol.h; sourceTree = "<group>"; };
+		DC7EDFCA273A693200D3E5CA /* flex_enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flex_enum.h; sourceTree = "<group>"; };
+		DC7EDFCB273A693200D3E5CA /* WXConfigCenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXConfigCenterProtocol.h; sourceTree = "<group>"; };
+		DC7EDFCC273A693200D3E5CA /* WXEventModuleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModuleProtocol.h; sourceTree = "<group>"; };
+		DC7EDFCD273A693200D3E5CA /* WXURLRewriteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXURLRewriteProtocol.h; sourceTree = "<group>"; };
+		DC7EDFCE273A693200D3E5CA /* WXAComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAComponent.h; sourceTree = "<group>"; };
+		DC7EDFCF273A693200D3E5CA /* WXBridgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBridgeProtocol.h; sourceTree = "<group>"; };
+		DC7EDFD0273A693200D3E5CA /* DCUniMPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPError.h; sourceTree = "<group>"; };
+		DC7EDFD1273A693200D3E5CA /* DCUniMPMenuActionSheetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPMenuActionSheetStyle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +169,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7EDF7C273A68F000D3E5CA /* libiconv.tbd in Frameworks */,
+				DC7EDF7A273A68E500D3E5CA /* AddressBook.framework in Frameworks */,
+				DC7EDF78273A68DD00D3E5CA /* CoreLocation.framework in Frameworks */,
+				DC7EDF76273A68D500D3E5CA /* AssetsLibrary.framework in Frameworks */,
+				DC7EDF74273A68CD00D3E5CA /* CoreTelephony.framework in Frameworks */,
+				DC7EDF72273A68C300D3E5CA /* QuickLook.framework in Frameworks */,
+				DC7EDF6F273A68B600D3E5CA /* libc++.tbd in Frameworks */,
+				DC7EDF6D273A68AD00D3E5CA /* CoreGraphics.framework in Frameworks */,
+				DC7EDF6B273A68A300D3E5CA /* QuartzCore.framework in Frameworks */,
+				DC7EDF69273A689900D3E5CA /* CoreText.framework in Frameworks */,
+				DC7EDF67273A688F00D3E5CA /* OpenGLES.framework in Frameworks */,
+				DC7EDF65273A688300D3E5CA /* GLKit.framework in Frameworks */,
+				DC7EDF63273A687A00D3E5CA /* AVKit.framework in Frameworks */,
+				DC7EDF61273A687200D3E5CA /* AVFoundation.framework in Frameworks */,
+				DC7EDF5F273A686900D3E5CA /* MediaPlayer.framework in Frameworks */,
+				DC7EDF5D273A685B00D3E5CA /* CoreMedia.framework in Frameworks */,
+				DC7EDF5B273A684800D3E5CA /* JavaScriptCore.framework in Frameworks */,
+				DC7EDF4F273A683A00D3E5CA /* liblibNativeUI.a in Frameworks */,
+				DC7EDF50273A683A00D3E5CA /* liblibPDRCore.a in Frameworks */,
+				DC7EDF51273A683A00D3E5CA /* liblibNavigator.a in Frameworks */,
+				DC7EDF52273A683A00D3E5CA /* liblibStorage.a in Frameworks */,
+				DC7EDF53273A683A00D3E5CA /* liblibNativeObj.a in Frameworks */,
+				DC7EDF54273A683A00D3E5CA /* storage.framework in Frameworks */,
+				DC7EDF55273A683A00D3E5CA /* liblibUI.a in Frameworks */,
+				DC7EDF56273A683A00D3E5CA /* libcoreSupport.a in Frameworks */,
+				DC7EDF57273A683A00D3E5CA /* liblibWeex.a in Frameworks */,
+				DC7EDF58273A683A00D3E5CA /* liblibIO.a in Frameworks */,
+				DC7EDF59273A683A00D3E5CA /* libSDWebImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +214,153 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
-				F4FF95D6245B92E800C19C63 /* Mp.swift */,
+				DC7EDF86273A693200D3E5CA /* Headers */,
+				DC7EDF7E273A691D00D3E5CA /* Resources */,
+				B3E7B5881CC2AC0600A0062D /* Mp.h */,
 				B3E7B5891CC2AC0600A0062D /* Mp.m */,
-				F4FF95D5245B92E700C19C63 /* Mp-Bridging-Header.h */,
-
 				134814211AA4EA7D00B7C361 /* Products */,
+				DC7EDF43273A683900D3E5CA /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		DC7EDF43273A683900D3E5CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC7EDF7B273A68F000D3E5CA /* libiconv.tbd */,
+				DC7EDF79273A68E500D3E5CA /* AddressBook.framework */,
+				DC7EDF77273A68DD00D3E5CA /* CoreLocation.framework */,
+				DC7EDF75273A68D500D3E5CA /* AssetsLibrary.framework */,
+				DC7EDF73273A68CD00D3E5CA /* CoreTelephony.framework */,
+				DC7EDF71273A68C300D3E5CA /* QuickLook.framework */,
+				DC7EDF6E273A68B600D3E5CA /* libc++.tbd */,
+				DC7EDF6C273A68AD00D3E5CA /* CoreGraphics.framework */,
+				DC7EDF6A273A68A300D3E5CA /* QuartzCore.framework */,
+				DC7EDF68273A689900D3E5CA /* CoreText.framework */,
+				DC7EDF66273A688F00D3E5CA /* OpenGLES.framework */,
+				DC7EDF64273A688300D3E5CA /* GLKit.framework */,
+				DC7EDF62273A687A00D3E5CA /* AVKit.framework */,
+				DC7EDF60273A687200D3E5CA /* AVFoundation.framework */,
+				DC7EDF5E273A686900D3E5CA /* MediaPlayer.framework */,
+				DC7EDF5C273A685B00D3E5CA /* CoreMedia.framework */,
+				DC7EDF5A273A684800D3E5CA /* JavaScriptCore.framework */,
+				DC7EDF4B273A683A00D3E5CA /* libcoreSupport.a */,
+				DC7EDF4D273A683A00D3E5CA /* liblibIO.a */,
+				DC7EDF48273A683A00D3E5CA /* liblibNativeObj.a */,
+				DC7EDF44273A683A00D3E5CA /* liblibNativeUI.a */,
+				DC7EDF46273A683A00D3E5CA /* liblibNavigator.a */,
+				DC7EDF45273A683A00D3E5CA /* liblibPDRCore.a */,
+				DC7EDF47273A683A00D3E5CA /* liblibStorage.a */,
+				DC7EDF4A273A683A00D3E5CA /* liblibUI.a */,
+				DC7EDF4C273A683A00D3E5CA /* liblibWeex.a */,
+				DC7EDF4E273A683A00D3E5CA /* libSDWebImage.a */,
+				DC7EDF49273A683A00D3E5CA /* storage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC7EDF7E273A691D00D3E5CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC7EDF7F273A691D00D3E5CA /* __uniappes6.js */,
+				DC7EDF80273A691D00D3E5CA /* uni-jsframework.js */,
+				DC7EDF81273A691D00D3E5CA /* PandoraApi.bundle */,
+				DC7EDF82273A691D00D3E5CA /* uni-jsframework-vue3.js */,
+				DC7EDF83273A691D00D3E5CA /* unincomponents.ttf */,
+				DC7EDF84273A691D00D3E5CA /* weex-polyfill.js */,
+				DC7EDF85273A691D00D3E5CA /* weexUniJs.js */,
+			);
+			name = Resources;
+			path = Core/Resources;
+			sourceTree = "<group>";
+		};
+		DC7EDF86273A693200D3E5CA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DC7EDF87273A693200D3E5CA /* DCUniMPSDKEngine.h */,
+				DC7EDF88273A693200D3E5CA /* DCUniMP.h */,
+				DC7EDF89273A693200D3E5CA /* DCUniMPConfiguration.h */,
+				DC7EDF8A273A693200D3E5CA /* DCUniMPInstance.h */,
+				DC7EDF8B273A693200D3E5CA /* weexHeader */,
+				DC7EDFD0273A693200D3E5CA /* DCUniMPError.h */,
+				DC7EDFD1273A693200D3E5CA /* DCUniMPMenuActionSheetStyle.h */,
+			);
+			name = Headers;
+			path = Core/Headers;
+			sourceTree = "<group>";
+		};
+		DC7EDF8B273A693200D3E5CA /* weexHeader */ = {
+			isa = PBXGroup;
+			children = (
+				DC7EDF8C273A693200D3E5CA /* WXModuleProtocol.h */,
+				DC7EDF8D273A693200D3E5CA /* WXResourceLoader.h */,
+				DC7EDF8E273A693200D3E5CA /* WXApmForInstance.h */,
+				DC7EDF8F273A693200D3E5CA /* WXWebSocketHandler.h */,
+				DC7EDF90273A693200D3E5CA /* WXImgLoaderProtocol.h */,
+				DC7EDF91273A693200D3E5CA /* WXComponentManager.h */,
+				DC7EDF92273A693200D3E5CA /* WXScrollerProtocol.h */,
+				DC7EDF93273A693200D3E5CA /* WXRichText.h */,
+				DC7EDF94273A693200D3E5CA /* WXView.h */,
+				DC7EDF95273A693200D3E5CA /* WXValidateProtocol.h */,
+				DC7EDF96273A693200D3E5CA /* WXDefine.h */,
+				DC7EDF97273A693200D3E5CA /* JSContext+Weex.h */,
+				DC7EDF98273A693200D3E5CA /* WXExtendCallNativeProtocol.h */,
+				DC7EDF99273A693200D3E5CA /* WXSDKEngine.h */,
+				DC7EDF9A273A693200D3E5CA /* style.h */,
+				DC7EDF9B273A693200D3E5CA /* WXResourceRequestHandler.h */,
+				DC7EDF9C273A693200D3E5CA /* WXDisplayLinkManager.h */,
+				DC7EDF9D273A693200D3E5CA /* WXUtility.h */,
+				DC7EDF9E273A693200D3E5CA /* WXResourceRequest.h */,
+				DC7EDF9F273A693200D3E5CA /* WXConvert.h */,
+				DC7EDFA0273A693200D3E5CA /* WXPageEventNotifyEvent.h */,
+				DC7EDFA1273A693200D3E5CA /* WXSDKInstance.h */,
+				DC7EDFA2273A693200D3E5CA /* WXSDKManager.h */,
+				DC7EDFA3273A693200D3E5CA /* WXDebugTool.h */,
+				DC7EDFA4273A693200D3E5CA /* WXType.h */,
+				DC7EDFA5273A693200D3E5CA /* WXApmProtocol.h */,
+				DC7EDFA6273A693200D3E5CA /* WXJSFrameworkLoadProtocol.h */,
+				DC7EDFA7273A693200D3E5CA /* WXExceptionUtils.h */,
+				DC7EDFA8273A693200D3E5CA /* WXIndicatorComponent.h */,
+				DC7EDFA9273A693200D3E5CA /* WXErrorView.h */,
+				DC7EDFAA273A693200D3E5CA /* NSObject+WXSwizzle.h */,
+				DC7EDFAB273A693200D3E5CA /* WXMonitor.h */,
+				DC7EDFAC273A693200D3E5CA /* WXSDKInstance+DCExtend.h */,
+				DC7EDFAD273A693200D3E5CA /* WXRecyclerComponent.h */,
+				DC7EDFAE273A693200D3E5CA /* WXScrollerComponent.h */,
+				DC7EDFAF273A693200D3E5CA /* WXNetworkProtocol.h */,
+				DC7EDFB0273A693200D3E5CA /* WXTracingManager.h */,
+				DC7EDFB1273A693200D3E5CA /* WXComponent.h */,
+				DC7EDFB2273A693200D3E5CA /* WXPrerenderManager.h */,
+				DC7EDFB3273A693200D3E5CA /* WXComponent+Layout.h */,
+				DC7EDFB4273A693200D3E5CA /* layout.h */,
+				DC7EDFB5273A693200D3E5CA /* WXSDKInstance+Bridge.h */,
+				DC7EDFB6273A693200D3E5CA /* UniPluginProtocol.h */,
+				DC7EDFB7273A693200D3E5CA /* WXModalUIModule.h */,
+				DC7EDFB8273A693200D3E5CA /* WXAnalyzerCenter.h */,
+				DC7EDFB9273A693200D3E5CA /* WXVoiceOverModule.h */,
+				DC7EDFBA273A693200D3E5CA /* WXRootView.h */,
+				DC7EDFBB273A693200D3E5CA /* WXAppConfiguration.h */,
+				DC7EDFBC273A693200D3E5CA /* WXListComponent.h */,
+				DC7EDFBD273A693200D3E5CA /* WXSDKError.h */,
+				DC7EDFBE273A693200D3E5CA /* WXRootViewController.h */,
+				DC7EDFBF273A693200D3E5CA /* WXNavigationProtocol.h */,
+				DC7EDFC0273A693200D3E5CA /* WXAnalyzerProtocol.h */,
+				DC7EDFC1273A693200D3E5CA /* WeexSDK.h */,
+				DC7EDFC2273A693200D3E5CA /* WXBridgeManager.h */,
+				DC7EDFC3273A693200D3E5CA /* WXResourceResponse.h */,
+				DC7EDFC4273A693200D3E5CA /* WXBaseViewController.h */,
+				DC7EDFC5273A693200D3E5CA /* WXAppMonitorProtocol.h */,
+				DC7EDFC6273A693200D3E5CA /* WeexProtocol.h */,
+				DC7EDFC7273A693200D3E5CA /* WXJSExceptionProtocol.h */,
+				DC7EDFC8273A693200D3E5CA /* WXJSExceptionInfo.h */,
+				DC7EDFC9273A693200D3E5CA /* WXTracingProtocol.h */,
+				DC7EDFCA273A693200D3E5CA /* flex_enum.h */,
+				DC7EDFCB273A693200D3E5CA /* WXConfigCenterProtocol.h */,
+				DC7EDFCC273A693200D3E5CA /* WXEventModuleProtocol.h */,
+				DC7EDFCD273A693200D3E5CA /* WXURLRewriteProtocol.h */,
+				DC7EDFCE273A693200D3E5CA /* WXAComponent.h */,
+				DC7EDFCF273A693200D3E5CA /* WXBridgeProtocol.h */,
+			);
+			path = weexHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,10 +420,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				F4FF95D7245B92E800C19C63 /* Mp.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* Mp.m in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +472,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -220,6 +515,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -228,41 +524,46 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Core/Libs",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Core/Libs",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Mp;
 				SKIP_INSTALL = YES;
-
-				SWIFT_OBJC_BRIDGING_HEADER = "Mp-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Core/Libs",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Core/Libs",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Mp;
 				SKIP_INSTALL = YES;
-
-				SWIFT_OBJC_BRIDGING_HEADER = "Mp-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-
 			};
 			name = Release;
 		};
