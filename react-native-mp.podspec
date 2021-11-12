@@ -13,18 +13,17 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "10.0" }
   s.source       = { :git => "https://github.com/quany/react-native-mp.git", :tag => "#{s.version}" }
 
-
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
-  s.resources = 'ios/UniMPSDK/Core/Resources/*.{js,ttf,bundle}'
+  s.resources = 'ios/Core/Resources/*.{js,ttf,bundle}'
 
   s.libraries = 'c++','iconv'
 
   s.frameworks = 'JavaScriptCore','CoreMedia','MediaPlayer','AVFoundation','AVKit','GLKit','OpenGLES','CoreText','QuartzCore','CoreGraphics','QuickLook','CoreTelephony','AssetsLibrary','CoreLocation','AddressBook'
 
-  s.vendored_libraries = 'ios/UniMPSDK/Core/Libs/*.a'
+  s.vendored_libraries = 'ios/Core/Libs/*.a'
 
-  s.vendored_frameworks = 'ios/UniMPSDK/Core/Libs/*.framework'
+  s.vendored_frameworks = 'ios/Core/Libs/*.framework'
 
   s.dependency "React-Core"
 end

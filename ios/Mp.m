@@ -15,13 +15,13 @@ RCT_EXPORT_METHOD(initalize:(NSDictionary *)params findEventsWithResolver:(RCTPr
 {
     NSArray *menus = params[@"menus"];
     NSMutableArray *sheetItems = [NSMutableArray array];
-    
-    for (int i==0;i<menus.count;i++) {
+
+    for (int i=0;i<menus.count;i++) {
         NSLog(@"-> %@",menus[i]);
-        [sheetItems addObject[[DCUniMPMenuAcctionSheetItem alloc] initWithTitle:menus[i][@"item"] identifier:menus[i][@"key"]]]
+        [sheetItems addObject:[[DCUniMPMenuActionSheetItem alloc] initWithTitle:menus[i][@"title"] identifier:menus[i][@"key"]]];
     }
     [DCUniMPSDKEngine setDefaultMenuItems:sheetItems];
-    
+
     [DCUniMPSDKEngine setMenuButtonHidden:!params[@"capsule"]];
     [DCUniMPSDKEngine setDelegate:self];
     resolve([NSNumber numberWithBool:true]);
@@ -32,7 +32,7 @@ RCT_EXPORT_METHOD(launch:(NSDictionary *)arg  findEventsWithResolver:(RCTPromise
     NSString *appid = arg[@"appid"];
     NSString *path = arg[@"path"];
     NSDictionary *params = arg[@"params"];
-    
+
     [DCUniMPSDKEngine openApp:appid
                     arguments:params redirectPath:path];
     resolve([NSNumber numberWithBool:true]);
@@ -62,7 +62,7 @@ RCT_EXPORT_METHOD(releaseWgtToRunPathFromPath:(NSString *)path findEventsWithRes
     }
 }
 - (void)onUniMPEventReceive:(NSString *)event data:(id)data callback:(DCUniMPKeepAliveCallback)callback {
-    
+
     NSLog(@"Receive UniMP event: %@ data: %@",event,data);
     if(hasListeners){
         [self sendEventWithName:@"UniMPEventReceive" body:data];
