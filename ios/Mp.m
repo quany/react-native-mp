@@ -11,7 +11,7 @@ RCT_EXPORT_MODULE()
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_METHOD(initalize:(NSDictionary *)params findEventsWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXPORT_METHOD(initialize:(NSDictionary *)params findEventsWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
     NSArray *menus = params[@"menus"];
     NSMutableArray *sheetItems = [NSMutableArray array];
@@ -44,10 +44,10 @@ RCT_EXPORT_METHOD(isExistsApp:(NSString *)appid  findEventsWithResolver:(RCTProm
     resolve([NSNumber numberWithBool:isExistsApp]);
 }
 
-RCT_EXPORT_METHOD(releaseWgtToRunPathFromPath:(NSString *)path findEventsWithResolver:(RCTPromiseResolveBlock)resolve
+RCT_EXPORT_METHOD(releaseWgtToRunPathFromPath:(NSString *)path appid:(NSString *)appid findEventsWithResolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
-    NSString *appid = [[path lastPathComponent] stringByDeletingPathExtension];
+//    NSString *appid = [[path lastPathComponent] stringByDeletingPathExtension];
     BOOL success = [DCUniMPSDKEngine releaseAppResourceToRunPathWithAppid:appid resourceFilePath:path];
     resolve([NSNumber numberWithBool:success]);
 }
@@ -56,11 +56,13 @@ RCT_EXPORT_METHOD(releaseWgtToRunPathFromPath:(NSString *)path findEventsWithRes
 {
     return @[@"MenuItemClick",@"UniMPEventReceive",@"onCloseMp"];
 }
+
+#pragma mark - DCUniMPSDKEngineDelegate
+/// DCUniMPMenuActionSheetItem 点击触发回调方法
 - (void)defaultMenuItemClicked:(NSString *)identifier {
-    if(hasListeners){
-        [self sendEventWithName:@"MenuItemClick" body:identifier];
-    }
+    NSLog(@"标识为 %@ 的 item 被点击了", identifier);
 }
+
 - (void)onUniMPEventReceive:(NSString *)event data:(id)data callback:(DCUniMPKeepAliveCallback)callback {
 
     NSLog(@"Receive UniMP event: %@ data: %@",event,data);
