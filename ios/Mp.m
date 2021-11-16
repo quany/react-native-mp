@@ -21,7 +21,7 @@ RCT_EXPORT_METHOD(initialize:(NSDictionary *)params findEventsWithResolver:(RCTP
         [sheetItems addObject:[[DCUniMPMenuActionSheetItem alloc] initWithTitle:menus[i][@"title"] identifier:menus[i][@"key"]]];
     }
     [DCUniMPSDKEngine setDefaultMenuItems:sheetItems];
-
+    
     [DCUniMPSDKEngine setMenuButtonHidden:!params[@"capsule"]];
     [DCUniMPSDKEngine setDelegate:self];
     resolve([NSNumber numberWithBool:true]);
@@ -32,10 +32,20 @@ RCT_EXPORT_METHOD(launch:(NSDictionary *)arg  findEventsWithResolver:(RCTPromise
     NSString *appid = arg[@"appid"];
     NSString *path = arg[@"path"];
     NSDictionary *params = arg[@"params"];
-
-    [DCUniMPSDKEngine openApp:appid
-                    arguments:params redirectPath:path];
-    resolve([NSNumber numberWithBool:true]);
+    
+    DCUniMPConfiguration *configuration = [[DCUniMPConfiguration alloc] init];
+    configuration.arguments = params;
+    configuration.redirectPath = path;
+    // 启动小程序
+    [DCUniMPSDKEngine openUniMP:appid configuration:configuration completed:^(DCUniMPInstance * _Nullable uniMPInstance, NSError * _Nullable error) {
+        if (uniMPInstance) {
+            // success
+//            self.currentUniMP = uniMPInstance;
+            resolve([NSNumber numberWithBool:true]);
+        } else {
+            reject(@"0",@"打开小程序失败",error);
+        }
+    }];
 }
 RCT_EXPORT_METHOD(isExistsApp:(NSString *)appid  findEventsWithResolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
@@ -47,7 +57,6 @@ RCT_EXPORT_METHOD(isExistsApp:(NSString *)appid  findEventsWithResolver:(RCTProm
 RCT_EXPORT_METHOD(releaseWgtToRunPathFromPath:(NSString *)path appid:(NSString *)appid findEventsWithResolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
-//    NSString *appid = [[path lastPathComponent] stringByDeletingPathExtension];
     BOOL success = [DCUniMPSDKEngine releaseAppResourceToRunPathWithAppid:appid resourceFilePath:path];
     resolve([NSNumber numberWithBool:success]);
 }
