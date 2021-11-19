@@ -78,6 +78,10 @@ launch({
 - 解耦大而全的业务,高扩展;
 - 扩展生态共享;
 
+## 欢迎交流
+
+![20211119181000](https://i.loli.net/2021/11/19/8DbdEz9Jjf4AG5i.png)
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
