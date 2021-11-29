@@ -6,7 +6,7 @@
 
 ## 安装
 
-> 使用React Native 0.60以上
+> 需React Native 0.60以上
 
 - npm package
 
