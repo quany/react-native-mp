@@ -80,7 +80,7 @@ launch({
 
 ## 欢迎交流
 
-![20211119181000](https://i.loli.net/2021/11/19/8DbdEz9Jjf4AG5i.png)
+<img src="https://i.loli.net/2021/11/19/8DbdEz9Jjf4AG5i.png" alt="图片替换文本" width="100" height="100" />
 
 ## Contributing
 
